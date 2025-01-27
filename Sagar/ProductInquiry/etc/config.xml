@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <productinquiry>
+            <general>
+                <enable>1</enable>
+                <label>Inquiry</label>
+            </general>    
+            <email>
+                <template>productinquiry_email_template</template>
+                <reply_template>productinquiry_email_reply_template</reply_template>
+                <log_enable>1</log_enable>
+            </email>        
+        </productinquiry>
+    </default>
+</config>

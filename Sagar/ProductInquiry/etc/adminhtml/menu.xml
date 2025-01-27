@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Sagar_ProductInquiry::productinquiry" title="Product Inquiry" module="Sagar_ProductInquiry" action="productinquiry" sortOrder="51" resource="Sagar_ProductInquiry::productinquiry"/>
+    </menu>
+</config>

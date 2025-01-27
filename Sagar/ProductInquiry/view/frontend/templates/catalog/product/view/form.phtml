@@ -1,0 +1,77 @@
+<?php
+$product = $block->getProduct();
+$isModuleEnabled = $block->IsModuleEnable(); // Check if the module is enabled
+$customerDetails = $block->getCustomerDetails(); // Get customer details (email and name)
+if ($isModuleEnabled && $product): ?>
+    <div class="product-inquiry-form">
+        <h3>Have a question? Feel free to ask us!</h3>
+        <form id="product-inquiry-form" method="post">
+            <!-- Hidden field for Product ID -->
+            <input type="hidden" name="product_id" value="<?= $product->getId() ?>" />
+
+            <div class="field required">
+                <label class="label" for="customer_name">
+                    <span>Full Name:</span>
+                </label>
+                <div class="control">
+                    <input 
+                        type="text" 
+                        id="customer_name" 
+                        name="customer_name" 
+                        value="<?= !empty($customerDetails['name']) ? htmlspecialchars($customerDetails['name']) : '' ?>" 
+                        required 
+                    />
+                </div>
+            </div>
+
+            <div class="field required">
+                <label class="label" for="customer_email">
+                    <span>Email Address:</span>
+                </label>
+                <div class="control">
+                    <input 
+                        type="email" 
+                        id="customer_email" 
+                        name="customer_email" 
+                        value="<?= !empty($customerDetails['email']) ? htmlspecialchars($customerDetails['email']) : '' ?>" 
+                        required 
+                    />
+                </div>
+            </div>
+
+            <div class="field required">
+                <label class="label" for="inquiry_subject">
+                    <span>Subject:</span>
+                </label>
+                <div class="control">
+                    <input type="text" id="inquiry_subject" name="inquiry_subject" required />
+                </div>
+            </div>
+
+            <div class="field required">
+                <label class="label" for="inquiry_message">
+                    <span>Message:</span>
+                </label>
+                <div class="control">
+                    <textarea id="inquiry_message" name="inquiry_message" rows="5" required></textarea>
+                </div>
+            </div>
+
+            <div class="actions">
+                <button type="submit" class="action submit primary">Submit Product Inquiry</button>
+            </div>
+        </form>
+        <br>
+        <!-- Success and Error Messages -->
+        <div id="product-inquiry-messages" style="display:none;"></div>
+
+    </div>
+    <br>
+
+
+<?php endif; ?>
+<script type="text/x-magento-init">
+{
+ "*":{"Sagar_ProductInquiry/js/productenquiry": {}}
+}
+</script>

@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Email:etc/email_templates.xsd">
+    <template id="productinquiry_email_template" label="Product Inquirey" file="email_template.html" type="html" module="Sagar_ProductInquiry" area="frontend"/>
+    <template id="productinquiry_email_reply_template" label="Product Inquiry Reply" file="product_inquiry_reply_email_template.html" type="html" module="Sagar_ProductInquiry" area="adminhtml" />
+</config>

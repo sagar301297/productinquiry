@@ -1,0 +1,20 @@
+{
+    "name": "sagar/productinquiry",
+    "description": "Magento 2 module for handling product inquiries and sending email notifications.",
+    "require": {
+        "php": ">=7.1",
+        "magento/framework": ">=102.0"
+    },
+    "type": "magento2-module",
+    "license": [
+        "proprietary"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Sagar\\ProductInquiry\\": ""
+        }
+    }
+}

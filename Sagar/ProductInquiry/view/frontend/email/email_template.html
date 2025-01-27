@@ -1,0 +1,41 @@
+<!--@subject Product Inquiry@-->
+<!--@vars {
+"var Name":"Name",
+"var Email":"Email",
+"var Product_Id":"Product_Id"
+"var Product_Name":"Product_Name"
+"var Subject":"Subject"
+"var Message":"Message"
+} @-->
+
+{{template config_path="design/email/header_template"}}
+
+<h1>Product Inquiry</h1>
+<table class="message-details">
+    <tr>
+        <td><strong>{{trans "Name"}}:</strong></td>
+        <td>{{var Name}}</td>
+    </tr>
+    <tr>
+        <td><strong>{{trans "Email"}}:</strong></td>
+        <td>{{var Email}}</td>
+    </tr>
+    <tr>
+        <td><strong>{{trans "Product Id"}}:</strong></td>
+        <td>{{var Product_Id}}</td>
+    </tr>
+    <tr>
+        <td><strong>{{trans "Product Name"}}:</strong></td>
+        <td>{{var Product_Name}}</td>
+    </tr>
+    <tr>
+        <td><strong>{{trans "Subject"}}:</strong></td>
+        <td>{{var Subject}}</td>
+    </tr>
+    <tr>
+        <td><strong>{{trans "Message"}}:</strong></td>
+        <td>{{var Message}}</td>
+    </tr>
+</table>
+
+{{template config_path="design/email/footer_template"}}
