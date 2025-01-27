@@ -65,6 +65,6 @@ class ProductInquiry extends AbstractView
     }
     public function IsModuleEnable()
     {
-        return $this->helper->IsEnabled();
+        return $this->helper->isModuleEnabled();
     }
 }
