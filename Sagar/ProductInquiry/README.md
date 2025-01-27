@@ -48,12 +48,13 @@ The module is built following Magento 2's standard structure. Key components inc
 - Enable or disable the module functionality.
 - Configure the admin notification email address.
 - Pick any email templates for admin and customer.
+- Enable/Disable Logs
 
 ### 5. Additional Features
 - Product details (name, id) send to admin for better clarity.
 - Reduce error rate with Try/Catch and Unit testing.
 - Ajax submission for faster and better experience.
-
+  
 ---
 
 ## Installation
